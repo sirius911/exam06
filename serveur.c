@@ -6,11 +6,11 @@
 /*   By: clorin <clorin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 13:18:40 by clorin            #+#    #+#             */
-/*   Updated: 2022/04/11 13:18:46 by clorin           ###   ########.fr       */
+/*   Updated: 2022/04/12 13:05:25 by clorin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errno.h>
+//#include <errno.h>
 #include <string.h>
 #include <unistd.h>
 #include <netdb.h>
@@ -18,6 +18,7 @@
 #include <netinet/in.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <sys/select.h>
 
 int clients = 0, fd_max = 0;
 int idx[65536];
